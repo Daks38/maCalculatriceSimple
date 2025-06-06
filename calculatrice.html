@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma calculette</title>
+    <link rel="stylesheet" href="style0.css" />
+  </head>
+  <body>
+    <div class="calculatrice">
+      <h6>By DAKS</h6>
+
+      <div class="ecran"><span class="info"></span></div>
+      <div class="boutons">
+        <table>
+          <tr>
+            <td>
+              <input type="button" value="7" name="val7" onclick="val(7)" />
+            </td>
+            <td>
+              <input type="button" value="8" name="val8" onclick="val(8)" />
+            </td>
+            <td>
+              <input type="button" value="9" name="val9" onclick="val(9)" />
+            </td>
+            <td>
+              <input type="button" value="+" name="plus" onclick="valPlus()" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="4" name="val4" onclick="val(4)" />
+            </td>
+            <td>
+              <input type="button" value="5" name="val5" onclick="val(5)" />
+            </td>
+            <td>
+              <input type="button" value="6" name="val6" onclick="val(6)" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="-"
+                name="moins"
+                onclick="valMoins()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="1" name="val1" onclick="val(1)" />
+            </td>
+            <td>
+              <input type="button" value="2" name="val2" onclick="val(2)" />
+            </td>
+            <td>
+              <input type="button" value="3" name="val3" onclick="val(3)" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="*"
+                name="multi"
+                onclick="valMulti()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="0" name="zero" onclick="val(0)" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="."
+                name="point"
+                onclick="valPoint()"
+              />
+            </td>
+            <td>
+              <input type="button" value="/" name="div" onclick="valDiv()" />
+            </td>
+            <td>
+              <input type="button" value="=" name="egal" onclick="resultat()" />
+            </td>
+          </tr>
+        </table>
+
+        <input type="button" value="Supprimer" name="sup" onclick="valSup()" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
