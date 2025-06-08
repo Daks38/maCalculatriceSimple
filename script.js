@@ -4,6 +4,10 @@ function val(res) {
 function valSup() {
   document.querySelector(".info").innerHTML = "";
 }
+function valSupp() {
+  let partiel = document.querySelector(".info").innerHTML;
+  document.querySelector(".info").innerHTML = partiel.slice(0, -1);
+}
 function valPlus() {
   document.querySelector(".info").innerHTML += "+";
 }
